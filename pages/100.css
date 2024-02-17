@@ -1,0 +1,72 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #7C4DFF
+}
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 768px;
+	margin: auto;
+}
+.image-container {
+	position: relative;
+	text-align: center; /* 保证图片水平居中 */
+}
+.image-container img {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	max-width: 100%;
+	height: auto; /* 保持图片原始比例 */
+	border-radius: 25px;
+}
+.image-container img:hover {box-shadow: 4px 4px 12px rgba(0,0,0,0.8); /* 悬停时增加阴影的效果 */}
+.dialogue-box {
+	position: absolute;
+	bottom: 30px;
+	right: 30%; /* 将对话框移动到右侧 */
+	background-color:rgba(255, 255, 255, 0.6);
+	padding: 10px;
+	border-radius: 15px;
+	max-width: 300px; /* 对话框的最大宽度 */box-shadow: 2px 2px 2px #888, -2px -2px 2px #fff; /* 添加阴影效果 */
+  	transition: box-shadow 0.1s ease; /* 可选：为阴影添加过渡效果，使之更平滑 */
+}
+.text-content {
+	background-color: transparent;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+.step-indicator {
+	background-color: red;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 15px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 0.9em;
+}
+.difficulty {
+	display: flex;
+    flex-direction: row;
+	justify-content: center; /* 水平居中排列 */
+    align-items: center; /* 垂直居中排列 */
+    padding: 20px;
+}
+.difficulty1 {
+	border: none; /* 去除边框 */
+    border-radius: 25px; /* 按钮的边角弧度 */
+    padding: 80px 20px; /* 按钮内部的填充，增加高度 */
+    margin: 10px; /* 按钮之间的外边距 */
+    font-size: 2em; /* 文字大小 */
+    cursor: pointer; /* 鼠标悬停时的指针形状 */
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2); /* 给按钮添加阴影 */
+    transition: background-color 0.3s ease; /* 过渡效果 */
+    color: white; /* 按钮的文字颜色 */
+}
+.difficulty1:nth-child(1) {background-color: #A7BFE8; /* 最浅的颜色 */}
+.difficulty1:nth-child(2) {background-color: #8391D9; /* 中等深度的颜色 */}
+.difficulty1:nth-child(3) {background-color: #626ED4; /* 最深的颜色 */}
+
+.difficulty1:hover {box-shadow: 4px 4px 12px rgba(0,0,0,0.3); /* 悬停时增加阴影的效果 */}
