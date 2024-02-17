@@ -1,7 +1,7 @@
 import openai
 from api import messages
 
-openai.api_key = "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"
+openai.api_key = "sk-***"
 
 
 def get_reply(question):
